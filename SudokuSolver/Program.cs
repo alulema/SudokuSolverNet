@@ -64,7 +64,7 @@ namespace SudokuSolver
             var start = DateTime.Now;
             Search(GridValuesExtended(puzzle));
             var end = DateTime.Now;
-            Console.WriteLine($"It took {end.Subtract(start).Seconds}.{end.Subtract(start).Milliseconds} seconds");
+            Console.WriteLine($"It took {end.Subtract(start).Seconds}.{end.Subtract(start).Milliseconds} seconds\n");
 
             Console.WriteLine("**** SOLVING HARD PUZZLE *****");
             Display(Eliminate(GridValuesExtended(hardPuzzle)));
